@@ -17,12 +17,7 @@ test.describe('Login Tests Suite', () => {
     for (const data of invalidLoginData) {
         test(`${data.testName}`, async ({ loginPage }) => {
             await loginPage.login(data.username, data.password);
-            if (data.username === "" || data.password === "") {
-                await loginPage.expectErrorMessage(data.expectedMessage);
-            }else{
-                await loginPage.expectErrorMessage(data.expectedMessage);
-            }
-            
+            await loginPage.expectErrorMessage(data.expectedMessage);
         });
     }
 
