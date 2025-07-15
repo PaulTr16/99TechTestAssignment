@@ -6,6 +6,7 @@ import { validSearchData,invalidSearchData } from './search-testing-data';
 
 
 test.describe('Search Tests Suite', () => {
+    // Valid search
     for (const data of validSearchData) {
         test(`${data.testName}`, async ({ adminPage }) => {
             // Navigate to the admin page
@@ -16,12 +17,9 @@ test.describe('Search Tests Suite', () => {
             await adminPage.expectFoundSearchResults(data.expected!);
         });
     }
-});
 
-
-test.describe('Invalid Search Tests Suite', () => {
-    // Add tests for invalid search scenarios if needed
-  for (const data of invalidSearchData) {
+    //Invalid Search
+    for (const data of invalidSearchData) {
         test(`${data.testName}`, async ({ adminPage }) => {
             // Navigate to the admin page
             await adminPage.gotoAdminPage();
@@ -36,4 +34,6 @@ test.describe('Invalid Search Tests Suite', () => {
             }
         });
     }
+
 });
+

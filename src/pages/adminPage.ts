@@ -39,8 +39,7 @@ export class AdminPage extends BasePage {
         if (status) {
             await this.selectStatusDropdown(status);
         }
-        await this.searchBtn.click();
-           
+       await this.searchBtn.click();  
     }
     
     async expectFoundSearchResults(expectedMessage: string) {

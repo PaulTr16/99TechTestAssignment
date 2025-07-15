@@ -34,11 +34,12 @@ export class LoginPage extends BasePage {
     }
 
     async expectErrorMessage(expectedMessage: string) {
-    const elements = this.page.getByText(expectedMessage);
-    const count = await elements.count();
-    for (let i = 0; i < count; i++) {
-        await expect(elements.nth(i)).toBeVisible();
-    }
+        const elements = this.page.getByText(expectedMessage);
+        await expect(elements.first()).toBeVisible({ timeout: 5000 });
+        const count = await elements.count();
+        for (let i = 0; i < count; i++) {
+            await expect(elements.nth(i)).toBeVisible();
+        }
 }
     
 }

@@ -11,20 +11,20 @@ interface SearchTestData {
 
 export const validSearchData: SearchTestData[] = [
     {
-        testName: "Search by username",
+        testName: "Valid - Search by username",
         username: "admin",
         expected: "admin",
 
     },
     {
-        testName: "Search by userName and  Status",
+        testName: "Valid - Search by userName and  Status",
         username: "admin",
         status: "Enabled",
         expected:"admin"
  
     },
     {
-        testName: "Search by all fields",
+        testName: "Valid - Search by all fields",
         username: "admin",
         role: "admin",
         status: "Enabled",
@@ -36,7 +36,7 @@ export const validSearchData: SearchTestData[] = [
 export const invalidSearchData: SearchTestData[] = [
     {
         testName: "Invalid - Search by username",
-        username: "invalidUserName",
+        username: "invalidxx",
         expected: ""
 
     },
@@ -47,7 +47,7 @@ export const invalidSearchData: SearchTestData[] = [
     },
     {
         testName: "Invalid - Search by invalid Employee Name",
-        employeeName: "Invalid Name",
+        employeeName: "Invalidxx",
         expected: ""
     }
 ]

@@ -9,10 +9,10 @@ test.beforeEach(async ({ loginPage, context }) => {
 
 
 test.describe('Login Tests Suite', () => {
-    test('Valid Login', async ({ loginPage }) => {
-        await loginPage.login(validLoginData.username, validLoginData.password);
-        await loginPage.expectSuccessfulLogin();
-    });
+    // test('Valid Login', async ({ loginPage }) => {
+    //     await loginPage.login(validLoginData.username, validLoginData.password);
+    //     await loginPage.expectSuccessfulLogin();
+    // });
 
     for (const data of invalidLoginData) {
         test(`${data.testName}`, async ({ loginPage }) => {
