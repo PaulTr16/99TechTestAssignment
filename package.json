@@ -8,7 +8,7 @@
         "test-firefox": "playwright test test --project firefox",
         "test-login": "playwright test tests/login/login.spec.ts --project chromium",
         "test-search": "playwright test tests/search/search.spec.ts --project chromium",
-        "test:report": "playwright show-report"
+        "open-report": "playwright show-report"
     },
     "keywords": [],
     "author": "",

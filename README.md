@@ -9,7 +9,7 @@
 <h2>💻 Technologies</h2>
 
 - Playwright
-- Typscript
+- Typescript
 
 <h2>🚀 Getting started</h2>
 
@@ -61,6 +61,7 @@ npm run open-report
 - **Test Directory** (`/tests`) : This directory contains all the test scripts organized by test type
 - **Pages Directory** (`/src/pages`): This directory follows the Page Object Model (POM) design pattern, which helps keep test logic separate from browser interaction code. It contains reusable page object files that can be shared across different test cases.
 - **Fixtures** (`/src/fixture`): Fixtures help manage and initialize shared test states
+- **Utils** (`/src/utils`): This includes testing setup and contains all free text messages for assertion.
 - **Test Configuration** (`/playwright.config.ts`): This file defines the Playwright configuration, allowing customization of settings like browser types, timeout durations, retry behavior, and test projects.
 - **GitHub Actions Workflow** (`/.github/workflows/`): This directory holds YAML files that define the CI/CD workflows using GitHub Actions. These workflows run automated tests on events like pull request updates or at scheduled intervals.
 
