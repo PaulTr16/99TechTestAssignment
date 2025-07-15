@@ -65,7 +65,7 @@ npm run open-report
 - **Test Configuration** (`/playwright.config.ts`): This file defines the Playwright configuration, allowing customization of settings like browser types, timeout durations, retry behavior, and test projects.
 - **GitHub Actions Workflow** (`/.github/workflows/`): This directory holds YAML files that define the CI/CD workflows using GitHub Actions. These workflows run automated tests on events like pull request updates or at scheduled intervals.
 
-<h2>Structure of the automation folder</h2>
+<h2> GitHub Action Integration</h2>
 
 - This project uses GitHub Actions to automatically run tests on every push or pull request targeting the `main` branches.
 
